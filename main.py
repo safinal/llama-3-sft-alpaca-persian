@@ -81,9 +81,9 @@ def create_datasets(
     else:
         dataset = dataset.train_test_split(test_size=fraction_valid_set, seed=seed)
         train_data = dataset["train"]
-        train_data = train_data.shuffle(seed=seed).select(range(1000)) # Only use 1000 samples for quick demo
+        # train_data = train_data.shuffle(seed=seed).select(range(1000)) # Only use 1000 samples for quick demo
         valid_data = dataset["test"]
-        valid_data = valid_data.shuffle(seed=seed).select(range(1000)) # Only use 1000 samples for quick demo
+        # valid_data = valid_data.shuffle(seed=seed).select(range(1000)) # Only use 1000 samples for quick demo
         print(f"Size of the train set: {len(train_data)}. Size of the validation set: {len(valid_data)}")
 
 
