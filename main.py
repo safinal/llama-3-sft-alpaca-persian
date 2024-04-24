@@ -14,7 +14,8 @@ from trl import SFTTrainer
 from trl.trainer import ConstantLengthDataset
 
 import wandb
-wandb.login(key="7b872b88b3078c661b16dbbfc331e33174d35e04")
+# add your wandb api key here
+wandb.login(key="")
 
 
 def chars_token_ratio(dataset, tokenizer, nb_examples=400):
